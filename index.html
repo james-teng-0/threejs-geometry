@@ -10,11 +10,18 @@
   <body>
 
     <canvas id="bg"></canvas>
+
+    <div class="loader-wrapper">
+    </div>
+
+
     <script type="module" src="/main.js"></script>
     <script>
       $(window).on("load", function () {
+
         alert("LOADED")
-      })
+        $(".loader-wrapper").fadeOut("slow")
+      });
     </script>
   </body>
 </html>
