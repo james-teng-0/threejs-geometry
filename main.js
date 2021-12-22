@@ -84,7 +84,7 @@ const sphereSize = 1;
 const pointLightHelper = new THREE.PointLightHelper( pointLight, sphereSize );
 scene.add( pointLightHelper );
 
-const controls = new OrbitControls(camera, renderer.domElement); // listens to dom events on mouse and updates camera position accordingly
+// const controls = new OrbitControls(camera, renderer.domElement); // listens to dom events on mouse and updates camera position accordingly
 
 
 
@@ -116,7 +116,7 @@ function animate() {
   torusShape.rotation.y -= 0.007;
   torusShape.rotation.z -= 0.007;
 
-  controls.update();
+  // controls.update();
   renderer.render(scene, camera);
 }
 
