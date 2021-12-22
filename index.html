@@ -8,16 +8,23 @@
     <title>My App</title>
     <script type="module" crossorigin src="/threejs-website/assets/index.03a94c92.js"></script>
     <link rel="modulepreload" href="/threejs-website/assets/vendor.5836d92d.js">
-    <link rel="stylesheet" href="/threejs-website/assets/index.4d06baa5.css">
+    <link rel="stylesheet" href="/threejs-website/assets/index.30ea7fd1.css">
   </head>
   <body>
 
     <canvas id="bg"></canvas>
+
+    <div class="loader-wrapper">
+    </div>
+
+
     
     <script>
       $(window).on("load", function () {
+
         alert("LOADED")
-      })
+        $(".loader-wrapper").fadeOut("slow")
+      });
     </script>
   </body>
 </html>
