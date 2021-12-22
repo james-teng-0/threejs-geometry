@@ -4,26 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/threejs-website/assets/favicon.63a26457.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
     <title>My App</title>
     <script type="module" crossorigin src="/threejs-website/assets/index.03a94c92.js"></script>
     <link rel="modulepreload" href="/threejs-website/assets/vendor.5836d92d.js">
-    <link rel="stylesheet" href="/threejs-website/assets/index.30ea7fd1.css">
+    <link rel="stylesheet" href="/threejs-website/assets/index.959feb2b.css">
   </head>
   <body>
-
     <canvas id="bg"></canvas>
 
     <div class="loader-wrapper">
+      <img class="loading-gif" src="./loading.gif" alt="Please be patient..." />
+      <h1 class="loading-text">Loading...</h1>
     </div>
-
 
     
     <script>
       $(window).on("load", function () {
-
-        alert("LOADED")
-        $(".loader-wrapper").fadeOut("slow")
+        $(".loader-wrapper").fadeOut("slow");
       });
     </script>
   </body>
