@@ -3,7 +3,6 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { Light } from 'three';
 
-
 // ******************************************************** SCENE SETUP ******************************************************************************
 const scene = new THREE.Scene(); // container for threejs objects
 
