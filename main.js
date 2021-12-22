@@ -36,8 +36,8 @@ pointLight.shadow.camera.far = 200; // default
 
 // ********************************************************* CUBE ******************************************************************************
 const geometry  = new THREE.BoxGeometry(10, 10, 10);
-const texture = new THREE.TextureLoader().load("./assets/cubeTexture.png");
-const normalTexture = new THREE.TextureLoader().load("./assets/cubeNormalMap.png");
+const texture = new THREE.TextureLoader().load("./cubeTexture.png");
+const normalTexture = new THREE.TextureLoader().load("./cubeNormalMap.png");
 
 const material = new THREE.MeshStandardMaterial({map:texture, normalMap: normalTexture, metalness: 0.2}); 
 const shape = new THREE.Mesh(geometry, material);
@@ -48,7 +48,7 @@ scene.add(shape);
 // ********************************************************* TORUS ******************************************************************************
 const torusGeometry = new THREE.TorusGeometry(11, 1, 16, 100);
 const loader = new THREE.CubeTextureLoader();
-const cubeTexture = loader.load( [ './assets/px.png', './assets/nx.png', './assets/py.png', './assets/ny.png', './assets/pz.png', './assets/nz.png' ] );
+const cubeTexture = loader.load( [ './px.png', './nx.png', './py.png', './ny.png', './pz.png', './nz.png' ] );
 cubeTexture.encoding = THREE.sRGBEncoding;
 
 const torusMaterial = new THREE.MeshStandardMaterial( {envMap:cubeTexture, roughness: 0, metalness: 1} );
@@ -59,8 +59,8 @@ scene.add(torusShape);
 
 // ********************************************************* MOUNTAINS ******************************************************************************
 const mountainGeometry = new THREE.PlaneBufferGeometry(400, 300, 64, 64);
-const mountainTexture = new THREE.TextureLoader().load("./assets/mountain.jpg");
-const mountainHeight = new THREE.TextureLoader().load("./assets/mountainHeight.png");
+const mountainTexture = new THREE.TextureLoader().load("./mountain.jpg");
+const mountainHeight = new THREE.TextureLoader().load("./mountainHeight.png");
 
 const mountainMaterial = new THREE.MeshStandardMaterial({
   color:"gray",
