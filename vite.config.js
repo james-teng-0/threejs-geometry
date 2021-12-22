@@ -1,3 +1,5 @@
-module.exports = {
-    publicPath: '/threejs-website/'
-}
+import {defineConfig} from 'vite'
+
+export default defineConfig({
+    base: '/threejs-website/'
+})
